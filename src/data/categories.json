@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Laptops",
+    "slug": "laptops",
+    "description": "Portable computers for work, gaming, and everyday use.",
+    "productCount": 20
+  },
+  {
+    "id": 2,
+    "name": "Desktops & All-in-Ones",
+    "slug": "desktops-all-in-ones",
+    "description": "Powerful tower PCs and integrated desktop computers for home and office.",
+    "productCount": 0
+  },
+  {
+    "id": 3,
+    "name": "Monitors",
+    "slug": "monitors",
+    "description": "High-resolution displays for gaming, graphic design, and general viewing.",
+    "productCount": 23
+  },
+  {
+    "id": 4,
+    "name": "PC Components",
+    "slug": "pc-components",
+    "description": "Individual parts like GPUs, CPUs, RAM, and Motherboards for custom builds.",
+    "productCount": 0
+  },
+  {
+    "id": 5,
+    "name": "Peripherals & Accessories",
+    "slug": "peripherals-accessories",
+    "description": "Keyboards, mice, headsets, webcams, and other essential computer accessories.",
+    "productCount": 0
+  },
+  {
+    "id": 6,
+    "name": "new category1",
+    "slug": "new-category1",
+    "description": "dsqdsqdqsdqsqdsqds",
+    "productCount": 2
+  },
+  {
+    "id": 7,
+    "name": "ssssssss",
+    "slug": "ssssssss",
+    "description": "dsqdqsqdsqdsdqsdqs",
+    "productCount": 0
+  }
+]

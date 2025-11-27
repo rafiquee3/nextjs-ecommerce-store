@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-mdl: 55rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,9 +19,48 @@
     --foreground: #ededed;
   }
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.safari-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  
+}
+
+input, select, textarea {
+  &:focus {
+    outline: none;
+    background-color: #B0BFDA;
+  }
+}
+
+select#cat_select, select#sort_select , select#limit_select {
+  border-color: white;
+  background-color: #A8C8E2;
+  color: black;
+    &:focus {
+    outline: none;
+  }
+}
+
+#querySearch {
+  &:focus {
+    background-color: #BEE0F5;
+  }
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1763314783398,
+    "email": "admin@user.fr",
+    "login": "admin",
+    "hashedPassword": "$2b$10$ZdLnMCVrTHo3IwwF34KG2eB8k43Yx6j09PPMhn4J6do2yUbocXChK",
+    "role": "admin"
+  },
+  {
+    "id": 1763758059936,
+    "email": "raf@user.fr",
+    "login": "sokol",
+    "hashedPassword": "$2b$10$A5xV1KeTWDuxCU0mXQs4lezo6OVi.LlA06V81m/0OCvq/jbZIBF22",
+    "role": "user"
+  }
+]
