@@ -15,8 +15,7 @@ export async function GET(request: Request, context: CategoryRouteContext) {
     }
 
     try {
-        const {params} = await context; 
-        const {slug} = await params;
+        const { slug } = await context.params;
     
         const fileContents = await fs.readFile(categoriesFilePath, 'utf-8');
         const categories: Category[] = JSON.parse(fileContents);
@@ -46,8 +45,7 @@ export async function PATCH(request: Request, context: CategoryRouteContext) {
         return authorizationResponse; 
     }
     try {
-        const {params} = await context;
-        const {slug: categoryIdstring} = await params;
+        const { slug: categoryIdstring } = await context.params;
         const categoryId = Number(categoryIdstring);
 
         if (isNaN(categoryId) || categoryId <= 0) {
@@ -92,8 +90,7 @@ export async function DELETE(request: Request, context: CategoryRouteContext) {
     if (authorizationResponse) {
         return authorizationResponse; 
     }
-    const {params} = await context;
-    const {slug: categoryIdString} =  await params;
+    const { slug: categoryIdString } = await context.params;
     const categoryId = Number(categoryIdString);
 
     if (isNaN(categoryId) || categoryId <= 0) {

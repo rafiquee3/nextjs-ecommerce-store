@@ -10,8 +10,7 @@ const productsFilePath = path.join(process.cwd(), 'src/data', 'products.json');
 // Optional: Add a GET handler to fetch all products securely from the admin side
 export async function GET(request: Request, context: CategoryRouteContext) {
     try {
-        const {params} = await context;
-        const {slug: productId} = await params;
+        const { slug: productId } = await context.params;
 
         const fileContents = await fs.readFile(productsFilePath, 'utf-8');
         const products: Product[] = JSON.parse(fileContents);

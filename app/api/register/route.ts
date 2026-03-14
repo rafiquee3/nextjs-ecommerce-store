@@ -5,7 +5,7 @@ import { findUserByEmail, findUserByLogin, saveNewUser } from "@/lib/server/user
 import bcrypt from 'bcryptjs';
 import { User } from "@/src/types";
 
-export async function POST(request: Request, context: CategoryRouteContext) {
+export async function POST(request: Request) {
     try {
         const body = await request.json();
         const validatedData = SignUpSchema.parse(body);

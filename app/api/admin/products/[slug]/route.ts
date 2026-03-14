@@ -14,8 +14,7 @@ export async function PATCH(request: Request, context: CategoryRouteContext) {
         return authorizationResponse; 
     }
     try {
-        const {params} = await context;
-        const {slug: productIdstring} = await params;
+        const { slug: productIdstring } = await context.params;
         const productId = Number(productIdstring);
 
         if (isNaN(productId) || productId <= 0) {
@@ -64,8 +63,7 @@ export async function DELETE(request: Request, context: CategoryRouteContext) {
         return authorizationResponse; 
     }
     
-    const {params} = await context;
-    const {slug: productIdString} =  await params;
+    const { slug: productIdString } = await context.params;
     const productId = Number(productIdString);
 
     if (isNaN(productId) || productId <= 0) {
