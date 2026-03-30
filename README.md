@@ -8,23 +8,23 @@ A full-stack e-commerce web application built with the Next.js App Router. This 
 
 ## Key Features
 
-*   **Product Catalog:** Browse and view detailed product information.
-*   **Shopping Cart:** Efficient state management for a seamless add-to-cart experience using Zustand.
-*   **Authentication:** Secure user registration and login implemented with NextAuth.js.
-*   **Admin Dashboard:** Protected routes allowing authorized users to manage product listings and categories.
-*   **Media Uploads:** Integrated Cloudinary for handling product image uploads.
-*   **Form Validation:** Robust client and server-side validation using React Hook Form and Zod.
+- **Product Catalog:** Browse and view detailed product information.
+- **Shopping Cart:** Efficient state management for a seamless add-to-cart experience using Zustand.
+- **Authentication:** Secure user registration and login implemented with NextAuth.js.
+- **Admin Dashboard:** Protected routes allowing authorized users to manage product listings and categories.
+- **Media Uploads:** Integrated Cloudinary for handling product image uploads.
+- **Form Validation:** Robust client and server-side validation using React Hook Form and Zod.
 
 ## Tech Stack
 
-*   **Framework:** Next.js 16 (App Router)
-*   **UI Library:** React 19
-*   **Styling:** Tailwind CSS v4, Material Tailwind
-*   **State Management:** Zustand, SWR (Data Fetching)
-*   **Authentication:** NextAuth.js
-*   **Media Storage:** Cloudinary
-*   **Forms & Validation:** React Hook Form, Zod
-*   **Language:** TypeScript
+- **Framework:** Next.js 16 (App Router)
+- **UI Library:** React 19
+- **Styling:** Tailwind CSS v4, Material Tailwind
+- **State Management:** Zustand, SWR (Data Fetching)
+- **Authentication:** NextAuth.js
+- **Media Storage:** Cloudinary
+- **Forms & Validation:** React Hook Form, Zod
+- **Language:** TypeScript
 
 ## Getting Started
 
@@ -37,6 +37,7 @@ Ensure you have Node.js installed on your machine.
 ### Installation
 
 1.  Clone the repository and navigate into the directory:
+
     ```bash
     git clone https://github.com/rafiquee3/nextjs-ecommerce-store.git
     cd nextjs-ecommerce-store
@@ -76,15 +77,23 @@ npm run dev
 
 Open `http://localhost:3000` in your browser to view the application.
 
+## Testing Accounts
+
+You can use the following credentials to test the application's authentication:
+
+- **Test Account:**
+  - Login: `admin`
+  - Password: `Test1234`
+
 ## Project Structure
 
 A high-level overview of the main directories:
 
-*   `app/`: Next.js App Router pages, API routes, and layouts.
-*   `src/components/`: Reusable React UI components.
-*   `src/data/`: Mock data or local JSON databases.
-*   `src/types/`: TypeScript interfaces and Zod schemas.
-*   `lib/`: Server-side utilities, helper functions, and database access logic.
+- `app/`: Next.js App Router pages, API routes, and layouts.
+- `src/components/`: Reusable React UI components.
+- `src/data/`: Mock data or local JSON databases.
+- `src/types/`: TypeScript interfaces and Zod schemas.
+- `lib/`: Server-side utilities, helper functions, and database access logic.
 
 ## Deployment
 
